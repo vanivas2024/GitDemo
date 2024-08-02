@@ -1,27 +1,17 @@
 package org.example;
 
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //Chrome
-        /*System.setProperty("webdriver.chrome.driver", "C:\\Users\\vanit\\DriverExeFile\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();*/
-        //Firefox
-        /*System.setProperty("webdriver.gecko.driver", "C:\\Users\\vanit\\DriverExeFile\\geckodriver-v0.32.0-win64\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();*/
-        //Edge
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\vanit\\DriverExeFile\\edgedriver_win64\\msedgedriver.exe");
-        WebDriver driver = new EdgeDriver();
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-        driver.get("https://www.myntra.com/login");
-        System.out.println(driver.getCurrentUrl());
-        System.out.println(driver.getTitle());
-        driver.close();
+        for (int i = 1; i <= 5; i++) {
+            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+            System.out.println("i = " + i);
+        }
     }
 }
